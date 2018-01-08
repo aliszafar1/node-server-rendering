@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MY APP</title>
+  
+</head>
+<body>
+  <h1>Hello</h1>
+</div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script>
+    var receivedData = <%- id %>;
+    (function(receivedData){
+        console.log(receivedData);
+        $.post( "http://localhost:3000/getData", { name: "John", time: "2pm" } );
+
+    })(receivedData)
+
+    $.get( "http://localhost:3000/hello", function( data ) {
+      console.log("Clien", data);
+    });
+  </script>
+</body>
+</html>
