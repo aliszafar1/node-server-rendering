@@ -19,7 +19,7 @@ app.get('/hello', (req, res) => {
   res.json({ value : 'loaded' })
   console.log('Hurray!!!');
 })
-
+//Test
 app.post('/getData', (req, res) => {
   console.log(req.body);
 })
